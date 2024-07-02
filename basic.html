@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="text/x-icon" href="assets/way.jpg"> 
+    <title>Basic1</title>
+    <style>
+        /* Internal CSS styles */
+        h3 {
+            background-color:#ff65ca;
+            color:black;
+            border:2px solid black;
+            padding: 5px;
+            margin:8px;
+        }
+        /* Styling links */
+        a:hover, a:visited {
+            background-color: #ff65ca;
+        }
+        a:link {
+            background-color: aqua;
+        }
+        a:active {
+            background-color: coral;
+        }
+        /* Body background image */
+        body {
+            /* background-image: url('/assets/way.jpg'); Assuming 'way.jpg' is in the same directory as the HTML file
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+            
+            background-color: antiquewhite; /* Fallback background color */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Body content -->
+    <h1 title="first heading">Heading</h1>
+    <h2 style="font-size:70px;">Heading</h2>
+    <h3 style="background-color:paleturquoise;">Heading</h3>
+    <h4>heading</h4>
+    <h5>heading</h5>
+    <h6>heading</h6>
+    <hr/>
+    <p style="color:Red;font-size:20px;font-family: Verdana, Geneva, Tahoma, sans-serif;text-align:center" >First Line</p>
+    <p>Second Line</p>
+    <!-- Links -->
+    <a href="https://www.google.com/" target="_blank">Google Link</a><br>
+    <a href="mailto:xyz@gmail.com" target="_blank">Send Mail</a>
+    <br/>
+    <!-- Image -->
+    <img src="/assets/ele.jpg" alt="Elephant" width="100" height="100">
+    <!-- Preformatted text -->
+    <pre>
+    hello
+      How are you?
+    </pre>
+    <!-- Anchors -->
+    <a href="#c1">chapter 1 link</a>
+    <!-- Text formatting -->
+    <p> 
+        <b>Bold but not important</b>
+        <strong>bold but important text</strong>
+    </p>
+    <i>used to differentiate from other text</i>
+    <em>italic</em>
+    <p>Noraml text and <small>Smaller Text</small></p>
+    <p>This is <mark>highlighted</mark> text </p>
+    <p>price:<del>1250</del> 1000</p>
+    <p>price:<del>1250</del> <ins>1000</ins></p>
+    <!-- Subscript and Superscript -->
+    c<sub>2</sub><br>
+    a<sup>2</sup>
+    <!-- Quotation -->
+    <p>add <q>quotation</q> marks</p>
+    <!-- Abbreviation -->
+    <abbr title="World Health Organization">WHO</abbr>
+    <!-- Address -->
+    <address>
+        Akkala Sai Sruthi<br>
+        demo HTML
+    </address>
+    <!-- Citation -->
+    <p><cite>Gently Falls the Bakula</cite> by Sudha Murthy</p>
+    <!-- BDO (Bi-Directional Override) -->
+    <bdo>heyyy</bdo>
+    <!-- Commented-out paragraph -->
+    <!-- <p>good evening</p> -->
+    <!-- Text with comment -->
+    <p>how's <!--it going? --> the work?</p>
+    <!-- Styling headings -->
+    <h1 style="border:2px solid green">Good Morning!</h1>
+    <h1 style="background-color:rgb(200,40,80)">good</h1>
+    <h1 style="background-color:rgba(200,40,80,0.5);border:2px solid rgb(0,0,0);">good</h1><!--a stands for alpha(opacity)-->
+    <h1 style="background-color:#ff65ca">good</h1>
+    <h1 style="background-color:hsl(220,67%,80%)">good</h1><!--hue(0-360),0-red,120-green,240-blue,saturation-intensity of color(0%-shade of grey,100%-full color),lightness(0%-black,100%-white)-->
+    <h1 style="background-color:hsl(200,40,80,0.4)">good</h1>
+    <p id="c1">chapter 1</p>
+    <p><img src="/assets/ele.jpg" style="float:right; width:100px; height:100px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque atque totam, a libero nemo nesciunt ipsam alias corporis debitis ipsa, ab officia sequi eligendi voluptas quod aliquam quisquam autem amet. Quam repudiandae at qui quas, rem ex fugiat ullam assumenda et tempore, odit laborum dolores id iusto libero vel eaque? Repudiandae aliquid maiores voluptates tenetur repellat laudantium aspernatur! Neque mollitia esse nesciunt quo architecto unde voluptatibus natus minima laudantium nostrum voluptates inventore, molestias laboriosam quos vitae. Rerum explicabo illum ullam quas perspiciatis delectus provident architecto necessitatibus quisquam! Dignissimos, saepe tempora quas error tempore, blanditiis quidem aut deserunt et nobis similique!</p>
+    <section id="lists">
+        <h2>Lists</h2>
+        <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+        </ul>
+        <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+        </ol>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </section>
+    <section id="tables">
+        <h2>Tables</h2>
+        <table>
+            <caption>Example Table</caption>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sai</td>
+                    <td>sruthi</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>renu</td>
+                    <td>sree</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Forms -->
+    <section id="forms">
+        <h2>Forms</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Semantic Elements -->
+    <section id="semantic">
+        <h2>Semantic Elements</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>This is an article paragraph.</p>
+        </article>
+        <aside>
+            <h3>Aside Title</h3>
+            <p>This is an aside paragraph.</p>
+        </aside>
+        <section>
+            <h3>Section Title</h3>
+            <p>This is a section paragraph.</p>
+        </section>
+        <footer>
+            <p>Footer content goes here.</p>
+        </footer>
+    </section>
+    <!-- Iframes -->
+    <section id="iframes">
+        <h2>Iframes</h2>
+        <iframe src="basic.html" width="300" height="200"></iframe>
+    </section>
+</body>
+</html>
