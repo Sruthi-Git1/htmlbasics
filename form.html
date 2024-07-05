@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>Document</title>
+    <style>
+        .pop {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="signupForm">
+        <div class="container">
+            <div class="heading">
+                <h1>SignUp Form</h1>
+            </div>
+            <div class="labels">
+                <label for="email" class="ch">Email or Phone</label>
+                <br>
+                <input type="text" id="email" name="email" class="ch box" required="required">
+                <br>
+                <label for="pass" class="ch">Password</label>
+                <br>
+                <input type="password" id="pass" name="pass" class="ch box" required="required">
+                <br>
+                <p>Contains only Alphabets and digits</p>
+            </div>
+            <br>
+            <button type="submit">SignUp</button>
+            <p>Already a member? <a href="">Login now</a></p>
+        </div>
+        <div class="pop">
+            <div class="content">
+                <img src="assets/tick.jpg" alt="tick">
+                <p>SignedUp Successfully</p>
+                <button type="button" id="okButton">Ok</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents form submission
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.pop').style.display = 'block';
+        });
+
+        document.getElementById('okButton').addEventListener('click', function() {
+            document.querySelector('.pop').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+            document.getElementById('signupForm').reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>
